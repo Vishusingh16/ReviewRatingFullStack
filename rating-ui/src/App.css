@@ -1,0 +1,35 @@
+/* src/App.css */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.container h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: var(--secondary-accent-color);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.main-content {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 2rem;
+}
+
+.forms-column,
+.lists-column {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Responsive layout for smaller screens */
+@media (max-width: 900px) {
+  .main-content {
+    grid-template-columns: 1fr;
+  }
+}

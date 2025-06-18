@@ -1,0 +1,74 @@
+/* src/components/ProductList/ProductList.module.css */
+.card {
+  background-color: var(--card-background);
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 8px var(--shadow-color);
+  border: 1px solid var(--border-color);
+  max-height: 400px; 
+  overflow-y: auto;
+}
+
+.card h2 {
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+  color: var(--primary-text-color);
+  border-bottom: 2px solid var(--primary-accent-color);
+  padding-bottom: 0.5rem;
+}
+
+.list {
+  list-style: none;
+}
+
+.listItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0.5rem;
+  border-bottom: 1px solid var(--border-color);
+  transition: background-color 0.2s ease;
+}
+
+.listItem:last-child {
+  border-bottom: none;
+}
+
+.listItem:hover {
+  background-color: var(--primary-accent-color);
+}
+
+.productName {
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.productDescription {
+  font-size: 0.9rem;
+  color: var(--secondary-text-color);
+  margin-top: 0.25rem;
+}
+
+.ratingInfo {
+  text-align: right;
+  flex-shrink: 0;
+  margin-left: 1rem;
+}
+
+.rating {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #ffc107; /* Gold color for stars */
+}
+
+.reviewCount {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--secondary-text-color);
+}
+
+.emptyText {
+  color: var(--secondary-text-color);
+  text-align: center;
+  padding: 2rem 0;
+}
